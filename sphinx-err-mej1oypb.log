@@ -21,9 +21,17 @@
 #   sphinxcontrib.serializinghtml (1.1.5) from /Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/sphinxcontrib/serializinghtml/__init__.py
 #   sphinxcontrib.qthelp (1.0.3) from /Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/sphinxcontrib/qthelp/__init__.py
 #   alabaster (0.7.12) from /Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/alabaster/__init__.py
-#   rinoh.frontend.sphinx (0.5.3) from /Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/__init__.py
+#   rinoh.frontend.sphinx (0.5.4) from /Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/__init__.py
 #   myst_parser (0.15.2) from /Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/myst_parser/__init__.py
-#   sphinxcontrib.bibtex (2.4.1) from /Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/sphinxcontrib/bibtex/__init__.py
+#   sphinxcontrib.bibtex (2.4.2a0) from /Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/sphinxcontrib/bibtex/__init__.py
+#   sphinx.ext.graphviz (4.2.0) from /Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/sphinx/ext/graphviz.py
+Traceback (most recent call last):
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 27, in map_node
+    return cls._mapping[node_name.replace('-', '_')](node, **context)
+KeyError: 'graphviz'
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/sphinx/cmd/build.py", line 280, in build_main
     app.build(args.force_all, filenames)
@@ -33,17 +41,17 @@ Traceback (most recent call last):
     self.build(['__all__'], to_build)
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/sphinx/builders/__init__.py", line 357, in build
     self.write(docnames, list(updated_docnames), method)
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/__init__.py", line 246, in write
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/__init__.py", line 251, in write
     self.write_document(entry)
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/__init__.py", line 252, in write_document
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/__init__.py", line 257, in write_document
     rinoh_document = self.construct_rinohtype_document(data)
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/__init__.py", line 268, in construct_rinohtype_document
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/__init__.py", line 273, in construct_rinohtype_document
     rinoh_tree = from_doctree(doctree, sphinx_builder=self)
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 141, in from_doctree
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 144, in from_doctree
     return mapped_tree.flowable()
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 132, in flowable
     flowable, = self.flowables()
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 99, in flowables
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 102, in flowables
     for flowable in super().flowables():
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 137, in flowables
     for i, flowable in enumerate(self.build_flowables()):
@@ -53,7 +61,7 @@ Traceback (most recent call last):
     return self.grouped_flowables_class(self.children_flowables(),
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 125, in children_flowables
     return list(chain(*(item.flowables() for item in children)))
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 99, in flowables
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 102, in flowables
     for flowable in super().flowables():
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 137, in flowables
     for i, flowable in enumerate(self.build_flowables()):
@@ -63,19 +71,19 @@ Traceback (most recent call last):
     return self.grouped_flowables_class(self.children_flowables(),
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 125, in children_flowables
     return list(chain(*(item.flowables() for item in children)))
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 99, in flowables
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 102, in flowables
     for flowable in super().flowables():
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 137, in flowables
     for i, flowable in enumerate(self.build_flowables()):
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 146, in build_flowables
     yield self.build_flowable()
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/nodes.py", line 232, in build_flowable
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/sphinx/nodes.py", line 236, in build_flowable
     return super().build_flowable(id='%' + self.get('docname'), **kwargs)
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 162, in build_flowable
     return self.grouped_flowables_class(self.children_flowables(),
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 125, in children_flowables
     return list(chain(*(item.flowables() for item in children)))
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 99, in flowables
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 102, in flowables
     for flowable in super().flowables():
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 137, in flowables
     for i, flowable in enumerate(self.build_flowables()):
@@ -83,22 +91,12 @@ Traceback (most recent call last):
     yield self.build_flowable()
   File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 162, in build_flowable
     return self.grouped_flowables_class(self.children_flowables(),
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 125, in children_flowables
-    return list(chain(*(item.flowables() for item in children)))
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 99, in flowables
-    for flowable in super().flowables():
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 137, in flowables
-    for i, flowable in enumerate(self.build_flowables()):
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 146, in build_flowables
-    yield self.build_flowable()
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/nodes.py", line 208, in build_flowable
-    return rt.Paragraph(self.process_content(), style=self.style)
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 78, in process_content
-    return MixedStyledText([text for text in children_text if text],
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 78, in <listcomp>
-    return MixedStyledText([text for text in children_text if text],
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/rst/__init__.py", line 77, in <genexpr>
-    children_text = (child.styled_text() for child in self.getchildren())
-  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 42, in __getattr__
-    raise AttributeError('No such element: {} in {}'.format(name, self))
-AttributeError: No such element: styled_text in <rinoh.frontend.rst.nodes.Citation object at 0x7f93f8adfb20>
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 124, in children_flowables
+    children = self.getchildren()[skip_first:]
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 64, in getchildren
+    return [self.map_node(child, **self.context)
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 64, in <listcomp>
+    return [self.map_node(child, **self.context)
+  File "/Users/drapp/opt/miniconda3/envs/rinoh_error/lib/python3.9/site-packages/rinoh/frontend/__init__.py", line 29, in map_node
+    filename, line, node_name = cls.node_location(node)
+AttributeError: type object 'Section' has no attribute 'node_location'

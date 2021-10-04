@@ -2,3 +2,4 @@ sphinx
 myst-parser
 rinohtype
 sphinxcontrib.bibtex
+sphinx.ext.graphviz

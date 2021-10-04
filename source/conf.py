@@ -34,6 +34,7 @@ extensions = [
     'rinoh.frontend.sphinx',
     'myst_parser',
     'sphinxcontrib.bibtex',
+    'sphinx.ext.graphviz',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
