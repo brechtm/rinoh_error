@@ -1,20 +1,18 @@
 # Welcome to Rinoh Error's documentation!
 =
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+```{toctree}
+---
+maxdepth: 1
+caption: "Table of Contents"
+---
+chapter_1
+```
 
-
-
-# Indices and tables
-
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-```{bibliography}
-:style: plain
-:all:
+```{toctree}
+---
+maxdepth: 1
+caption: "Bibliography"
+---
+bibliography
 ```
