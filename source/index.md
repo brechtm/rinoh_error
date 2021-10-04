@@ -1,5 +1,4 @@
 # Welcome to Rinoh Error's documentation!
-=
 
 ```{toctree}
 ---
