@@ -1,0 +1,10 @@
+<document source="/Users/drapp/dev/rinoh_error/source/index.md">
+    <section classes="tex2jax_ignore mathjax_ignore" ids="welcome-to-rinoh-errors-documentation"
+             myst-anchor="index.md#welcome-to-rinoh-errors-documentation"
+             names="welcome\ to\ rinoh\ error’s\ documentation!">
+        <title>Welcome to Rinoh Error’s documentation!</title>
+        <graphviz code="digraph foo {
+  " bar" -> "baz";
+}" options="{'docname': 'index'}"/>
+    </section>
+</document>
