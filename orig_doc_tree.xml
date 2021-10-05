@@ -1,0 +1,27 @@
+<document docname="index" source="/Users/drapp/dev/rinoh_error/source/index.md">
+    <compound classes="toctree-wrapper">
+        <start_of_file docname="chapter_1">
+            <section classes="tex2jax_ignore mathjax_ignore" docname="chapter_1" ids="%chapter_1#chapter-1"
+                     myst-anchor="chapter_1.md#chapter-1" names="chapter\ 1">
+                <title>Chapter 1</title>
+                <paragraph>blah blah blah</paragraph>
+            </section>
+        </start_of_file>
+    </compound>
+    <compound classes="toctree-wrapper">
+        <start_of_file docname="bibliography">
+            <section classes="tex2jax_ignore mathjax_ignore" docname="bibliography" ids="%bibliography#bibliography"
+                     myst-anchor="bibliography.md#bibliography" names="bibliography">
+                <title>Bibliography</title>
+                <paragraph ids="%bibliography#id1">
+                    <citation docname="bibliography" ids="%bibliography#id2">
+                        <label support_smartquotes="False">1</label>
+                        <paragraph>Donald Ervin Knuth. <emphasis>The art of computer programming</emphasis>. Addison
+                            Wesley, 2020.
+                        </paragraph>
+                    </citation>
+                </paragraph>
+            </section>
+        </start_of_file>
+    </compound>
+</document>

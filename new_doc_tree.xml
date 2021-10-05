@@ -1,0 +1,11 @@
+<document docname="index" source="/Users/drapp/dev/rinoh_error/source/index.md">
+    <container ids="id1">
+        <citation docname="index" ids="id2">
+            <label support_smartquotes="False">1</label>
+            <paragraph>Donald Ervin Knuth. <emphasis>The art of computer programming</emphasis>. Addison Wesley, 2020.
+            </paragraph>
+        </citation>
+    </container>
+</document>
+
+<!--<document source="/Users/drapp/dev/rinoh_error/source/index.md"><section classes="tex2jax_ignore mathjax_ignore" ids="welcome-to-rinoh-errors-documentation" myst-anchor="index.md#welcome-to-rinoh-errors-documentation" names="welcome\ to\ rinoh\ error’s\ documentation!"><title>Welcome to Rinoh Error’s documentation!</title><container ids="id1"><citation docname="index" ids="id2"><label support_smartquotes="False">1</label><paragraph>Donald Ervin Knuth. <emphasis>The art of computer programming</emphasis>. Addison Wesley, 2020.</paragraph></citation></container></section></document>-->
