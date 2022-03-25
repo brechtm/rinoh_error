@@ -84,8 +84,10 @@ myst_heading_anchors = 2
 
 # -- Options for bibtex extension ------------------------------------------------------------
 bibtex_bibfiles = ['refs.bib']
+bibtex_reference_style = 'author_year'
 
 # -- Options for rinoh extension ------------------------------------------------------------
 rinoh_documents = [
-    dict(doc='index', target='book', toctree_only=False),
+    dict(doc='index', target='book', toctree_only=False,
+         template='template.rtt'),
 ]
